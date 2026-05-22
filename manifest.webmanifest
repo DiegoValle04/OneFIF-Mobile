@@ -10,13 +10,13 @@
     "description": "Aplicación oficial de OneFIF para el seguimiento de torneos y partidos.",
     "icons": [
         {
-            "src": "img/logo-onefif.png",
+            "src": "img/logo-onefif-192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "any maskable"
         },
         {
-            "src": "img/logo-onefif.png",
+            "src": "img/logo-onefif-512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "any maskable"
