@@ -1,536 +1,182 @@
+/* Estilos Globales Basados en tu Proyecto */
+* {
+    box-sizing: border-box;
+    /* Clave en ingeniería: evita que el padding rompa el ancho */
+}
 
-/* Estilos de la barra superior */
+body {
+    background-color: #252525;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    padding-bottom: 50px;
+
+    /* Respaldo limpio para móviles */
+}
+
+/* En pantallas grandes no es necesario el padding porque la barra se oculta */
+@media (min-width: 640px) {
+    body {
+        padding-bottom: 0px;
+    }
+}
+
+p,
+span {
+    color: white;
+}
+
+/* ==========================================================================
+   1. BARRA SUPERIOR (TOP BAR) - Rediseñada para Móvil
+   ========================================================================== */
 .top-bar {
-    display: grid;
-    grid-template-columns: 25% 50% 15% 10%;
-    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    /* Apilado vertical para que todo quepa sin romperse */
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
     background-color: #000000;
     border-bottom: 1px solid #ddd;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.logo{
+.logo {
     color: white;
     font-weight: 1000;
-    font-size: 30px;
+    font-size: 26px;
+    /* Ligeramente más pequeño para pantallas chicas */
+    text-align: center;
 }
 
-.logo a{
+.logo a {
     text-decoration: none;
     color: white;
 }
 
-.logo a:hover{
+.logo a:hover {
     color: rgb(36, 36, 190);
 }
 
-.derecha{
-    color: white;
-    grid-column-start: 3;
-    grid-column-end: 3;
-    font-size: 20px;
-    color: white;
-    text-align: right;
-    margin: auto;
+/* Enlaces del menú superior */
+.external-links {
+    display: flex;
+    flex-wrap: wrap;
+    /* Si son muchos, bajan a la siguiente línea */
+    justify-content: center;
+    gap: 15px;
+    margin: 0;
 }
 
-
-.external-links{
-
-    grid-column-start: 2;
-    grid-column-end: 2;
-    margin: auto;
-}
-.external-links a{
-    font-size: 20px;
+.external-links a {
+    font-size: 16px;
+    /* Adaptado a móvil */
     color: white;
-    margin-left: 20px;
     text-decoration: none;
-
 }
-.external-links a:hover{
+
+.external-links a:hover {
     color: rgb(36, 36, 190);
 }
 
-.login{
-    grid-column: 4;
-    margin: auto;
-
-}
-
-.login a{
-    text-decoration: none;
-    font-size: 20px;
+/* Derecha y Login alineados al centro en móvil */
+.derecha,
+.login {
     color: white;
-    margin-left: 20px;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
 }
-.login a:hover{
+
+.login a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+.login a:hover {
     color: rgb(36, 36, 190);
 }
 
-
-body{
-    background-color: #252525;
+/* ==========================================================================
+   2. SECCIÓN EVENTOS Y PARTIDOS (MATCHES)
+   ========================================================================== */
+section.eventos {
+    padding: 15px;
+    width: 100%;
 }
 
-
-/*
-.example > *{
-    text-align: right;
-    color: aquamarine;
-    font-size: 80px;
-    background-color: #000000;
-}
-
-.ex-container {
-    display: grid;
-    grid-template-columns: auto auto auto ;
-    gap: 10px;
-}
-
-.seg{ background-color: rgb(70, 1, 70);
-    color: aliceblue;
-}
-
-.ter{
-    background-color: greenyellow;
-
-}
-
-*/
-
-/*
-.contact-info{
-    grid-column-start: 2;
-    grid-column-end: 2;
-    margin: auto;
-}
-
-
-.contact-info a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #333;
-    
-}
-
-.contact-info a:hover {
-    color: #ff6347;
-}
-*/
-
-/* Eventos*/
-
-section.eventos{
-    padding: 10px 20px;
-    min-width: 100%;
-
-}
-
-section.eventos *{
-    padding: 20px 20px;
-    font-size: 20px;
+section.eventos * {
+    padding: 5px;
+    /* Reducido para no saturar el espacio */
+    font-size: 18px;
     color: white;
     font-weight: 600;
 }
 
-section.eventos a{
+section.eventos a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     color: white;
-    margin-left: 20px;
-    text-align: right;
+    display: block;
+    text-align: center;
+    /* Centrado para facilitar el toque táctil */
+    margin: 10px 0;
 }
 
-section.eventos a:hover{
+section.eventos a:hover {
     color: rgb(36, 36, 190);
 }
-.match-container{
+
+/* El contenedor de los partidos ahora es de 1 columna en celular */
+.match-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-   /* grid-template-rows: auto auto;*/
-    gap: 8%;
+    grid-template-columns: 1fr;
+    /* Un partido debajo del otro */
+    gap: 15px;
     padding: 0px;
 }
 
-  .match{
-    padding: 0 !important;
-    gap: 0;
-
+/* Tarjeta de partido estándar */
+.match {
+    padding: 10px !important;
     border-style: solid;
     border-width: 1px;
     border-radius: 5px;
-    height: 72px;
-
+    height: auto;
+    /* Altura automática para que no se corte el texto */
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr auto 1fr;
+    /* Estructura: Local - Hora - Visitante */
     background-color: rgba(95, 95, 95, 0.8);
+    align-items: center;
     text-align: center;
-    font-size: 30px;
-  }
+    font-size: 18px;
+    /* Texto legible en móvil */
+}
 
-  .match-expanded{
-    padding: 0 !important;
-    gap: 0;
-    height: 100px;
-
+/* Tarjeta de partido expandida */
+.match-expanded {
+    padding: 15px !important;
+    height: auto;
     border-style: solid;
     border-width: 1px;
     border-radius: 5px;
-
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr auto 1fr;
     background-color: rgba(95, 95, 95, 0.8);
+    align-items: center;
     text-align: center;
-    font-size: 30px;
+    font-size: 18px;
+}
 
-
-  }
-
-
-  .anteriores a{
+.anteriores a {
     width: 100%;
     background-color: aqua;
-  }
-  .hora{
+}
+
+.hora {
     padding: 0 !important;
     text-align: center;
-
-  }
-
-
-.news-container1{
-
-    display: grid;
-    grid-template-columns: 55% 45%;    
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 5px;
-    margin: auto;
-
-    width:800px;
-    text-align: left;
-    padding: 0 !important;
+    font-weight: bold;
 }
-.image{
-    padding: 0% !important;
-    overflow: hidden;
-}
-
-
-/* Footer */
-
-footer{
-    background-color: #3d3d3d;
-    box-shadow: inset 0 1px rgb(255, 255, 255);
-    padding: 20px 20px;
-    color: white;
-    font-weight: 800;
-    font-size: 23px;
-
-
-}
-
-.redes{
-    display: grid;
-    grid-template-columns:  18% 18% 18% 18% auto;
-    gap: 8%;
-    margin: auto;
-}
-
-.redes > div{
-    background-color: rgba(95, 95, 95, 0.8);
-    font-size: 20px;
-    color: white;
-    font-weight: 500;
-    padding: 10px 10px;
-}
-.redes a{
-    font-size: 20px;
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
-    background-color: rgba(95, 95, 95, 0.8);
-    font-weight: 500;
-    padding: 10px 10px;
-}
-.redes a:hover{
-    background-color: rgba(138, 138, 138, 0.8);
-}
-
-p.redes-l{
-    font-weight: 400 !important;
-}
-
-/*Pagina Equipos*/
-
-.equipos{
-    width: 70%;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    gap: 5%;
-    padding: auto;
-    padding: 10px 20px;
-    row-gap: 40px !important;
-
-}
-
-.equipos > div{
-    background-color:#3d3d3d ;
-    border-style: solid;
-    border-color: #858585;
-    border-width: .25px;
-    border-radius: 5px;
-    font-weight: 400 !important;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    padding: 5px;
-}
-
-.equipos a{
-    background-color:#3d3d3d ;
-    border-style: solid;
-    border-color: #858585;
-    border-width: .25px;
-    border-radius: 5px;
-    font-weight: 400 !important;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    padding: 5px;
-    text-decoration: none; 
-}
-
-.equipos a:hover{
-    border-color: #adadad;  
-}
-
-p.titulo{
-    padding: 20px 20px;
-    font-size: 30px;
-    color: white;
-    font-weight: 600;
-    padding: 5px;
-}
-
-/* Login */
-
-.contenedor-landing{
-    font-size: 20px;
-    color: white;
-    font-weight: 700;
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 50px;
-}
-
-.contenedor-landing-reg{
-    font-size: 20px;
-    color: white;
-    font-weight: 700;
-    text-align: center;
-    grid-template-columns: auto;
-    padding: 50px;
-}
-
-.contenedor-landing-reg > *{
-   /* background-color: purple; */
-    text-align: center;
-}
-
-.contenedor-landing > h2{
-    font-size: 50px;
-    color: white;
-    font-weight: 700 ;
-}
-.cap-jug{
-    display: grid;
-    grid-template-columns: auto;
-    row-gap: 40px;
-    
-
-}
-
-
-.cap-jug > a{
-    position: relative;
-    background-color: #3d3d3d;
-    font-size: 25px;
-    color: white;
-    font-weight: 300;
-    border: solid;
-    border-radius: 2px;
-    border-width: 1px;
-    border-color: #858585;
-    width: 30%;
-    text-decoration: none;
-    margin: auto;
-}
-
-.cap-jug a:hover{
-    border-color: #adadad;  
-}
-
-p{
-    color: white;
-}
-
-span{
-    color: white;
-}
-/*
-/* Barra de navegación /
-.main-nav {
-    background-color: #f0f0f0;
-    padding: 10px 20px;
-    border-bottom: 2px solid #ddd;
-}
-
-.main-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.main-nav ul li {
-    margin-right: 20px;
-    position: relative;
-}
-
-.main-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    padding: 8px;
-    display: block;
-}
-
-.main-nav ul li a:hover {
-    color: #ff6347;
-}
-
-/* Menús desplegables /
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    min-width: 160px;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    color: #333;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-/*Posiciones/
-.centrado{
-    margin-left: 0%;
-    text-align: center;
-}
-/*Roger/
-
-.presentacion{
-    margin-top: 20px;
-    width: 100%;
-    text-align: center;
-    background-color: rgba(33,47,84,255);
-    color: #ddd;
-    height: 150px;
-    line-height: 100px;
-    padding-top: 50px;
-}
-
-/*.center-text{
-    margin-left: -220%;
-    font-size: 20px;
-    
-}
-    
-/
-
-.accordion{
-    width: 75%;
-
-    margin: auto;
-    margin-top: 10px;
-}
-
-.aviso-priv{
-    left: 200%;
-}
-
-/*Color del fondo del texto que se despliega/
-.accordion-item{
-    background-color: beige;
-
-}
-
-/*color de el boton/
-.accordion-button{
-    background-color: #910048;
-    color: white;
-}
-
-.footer{
-    background-color: lightgray;
-}
-
-.aviso-priv{
-    background-color: gray;
-    width: 100%;
-
-    bottom: 0;
-    color: rgb(207, 207, 207);
-    text-align: center;
-}
-
-
-.info-empresa{
-    background-color: rgb(194, 194, 194);
-    width: 100%;
-    margin-top: 60px;
-    bottom: 0;
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-.footer-contact-container{
-    display: grid;
-    grid-template-columns: auto auto auto 50%;
-    padding: 10px;
-}
-
-/*color acordeon cuando ensena informacion/
-.accordion-button:not(.collapsed) {
-    color: black;
-    background-color: #ad688b;
-    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
-}
-
-
-.raya{
-    width: 80%;
-    height: 1px;
-    background-color: black;
-   
-    margin: auto; 
-    margin-top: 10px;
-}
-
-.accordion-body{
-    text-align: left;
-}
-
-
-*/
