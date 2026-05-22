@@ -1,0 +1,23 @@
+{
+    "name": "OneFIF Mobile",
+    "short_name": "OneFIF",
+    "start_url": "/index.html",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#252525",
+    "theme_color": "#9333ea",
+    "lang": "es",
+    "description": "Aplicación oficial de OneFIF para el seguimiento de torneos y partidos.",
+    "icons": [
+        {
+            "src": "img/logo-onefif.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "img/logo-onefif.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
