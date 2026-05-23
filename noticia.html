@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticia - One FIF</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+
+<body class="bg-[#252525] text-zinc-300 antialiased min-h-screen pb-20">
+
+    <nav class="bg-black border-b border-gray-800 px-4 py-3 shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+
+            <div class="flex items-center gap-3 shrink-0">
+                <a href="index.html" class="text-gray-400 hover:text-purple-500 mr-1 text-xl transition-colors"
+                    aria-label="Volver al inicio">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <div
+                    class="bg-purple-600 text-white w-10 h-10 rounded-lg flex items-center justify-center font-bold text-xl shadow-md overflow-hidden">
+                    <img src="img/logo-uaq.png" class="w-full h-full object-cover" alt="Logo UAQ">
+                </div>
+                <a href="index.html">
+                    <span class="text-white font-extrabold text-lg sm:text-xl tracking-wider uppercase">
+                        One<span class="text-purple-500">FIF</span>
+                    </span>
+                </a>
+            </div>
+
+            <div class="flex-1 max-w-md relative">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <i class="fa-solid fa-magnifying-glass text-gray-400 text-sm"></i>
+                </div>
+                <input type="text" placeholder="Buscar..."
+                    class="w-full bg-gray-800 text-white placeholder-gray-400 text-sm rounded-full pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:bg-gray-700 transition-all duration-300 border border-transparent focus:border-transparent">
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="max-w-3xl mx-auto px-4 py-6">
+
+        <header class="mb-6">
+            <div class="flex items-center gap-2 mb-3">
+                <span
+                    class="bg-purple-600/20 text-purple-400 px-2.5 py-1 rounded text-xs font-bold tracking-wider uppercase">
+                    Torneo Interno
+                </span>
+                <span class="bg-zinc-800 text-zinc-400 px-2.5 py-1 rounded text-xs font-medium">
+                    Fútbol 7
+                </span>
+            </div>
+
+            <h1 class="text-2xl sm:text-3xl font-black text-white uppercase leading-tight tracking-tight mb-4">
+                ¡BOMBAZO! ASTON BIRRIA gana a ESCENCIA FC con una espectacular remontada
+            </h1>
+
+            <div class="flex items-center gap-3 border-y border-zinc-800 py-3 text-xs text-zinc-400">
+                <div class="flex items-center gap-1.5">
+                    <i class="fa-solid fa-user text-purple-500"></i>
+                    <span>Por: <strong class="text-zinc-200">Prensa FIF</strong></span>
+                </div>
+                <span class="text-zinc-600">•</span>
+                <div class="flex items-center gap-1.5">
+                    <i class="fa-solid fa-calendar text-zinc-500"></i>
+                    <span>22 de Mayo, 2026</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="w-full rounded-xl overflow-hidden shadow-2xl border border-zinc-800 mb-6 aspect-video">
+            <img src="img/aston.jpg" alt="Celebración de Aston Birria" class="w-full h-full object-cover">
+        </div>
+
+        <article class="prose prose-invert max-w-none space-y-4 text-sm sm:text-base text-zinc-300 leading-relaxed">
+
+            <p class="font-semibold text-white text-base sm:text-lg">
+                En un duelo cardiaco que mantuvo a los espectadores al borde de las gradas, la escuadra de <span
+                    class="text-purple-400 font-bold">Aston Birria</span> logró imponerse con un contundente marcador en
+                la recta final del torneo interno de fútbol de la Facultad de Informática.
+            </p>
+
+            <p>
+                El encuentro arrancó cuesta arriba para los líderes invictos. Escencia FC saltó al terreno de juego con
+                un planteamiento sumamente agresivo, logrando romper las redes defensivas en los primeros diez minutos
+                del compromiso gracias a una excelente jugada colectiva que dejó sin opciones al guardameta.
+            </p>
+
+            <blockquote
+                class="border-l-4 border-purple-600 pl-4 my-6 italic text-zinc-200 bg-zinc-800/40 py-2 pr-2 rounded-r">
+                "Sabíamos que el rival nos iba a presionar desde el silbatazo inicial, pero mantuvimos la cabeza fría en
+                el mediocampo para revertir la situación", comentó el capitán de Aston Birria al finalizar el encuentro.
+            </blockquote>
+
+            <p>
+                La reacción morada llegó en la parte complementaria. Tras un ajuste técnico clave en las líneas tácticas
+                de contención, el conjunto de Aston Birria recuperó la posesión del balón. Dos contragolpes fulminantes
+                y una definición de antología al ángulo superior izquierdo sellaron el destino del partido, consolidando
+                su estatus de favoritos absolutos.
+            </p>
+
+            <p>
+                Con este triunfo estratégico, el combinado mantiene un paso perfecto e invicto dentro de la justa
+                deportiva de nuestra facultad. Prácticamente tienen un pie y medio asegurado en la gran final, a la
+                espera de conocer si su rival de zona será el fuerte conjunto representativo de los Troyanos o Pequeños
+                FC.
+            </p>
+
+        </article>
+
+        <div class="mt-8 pt-4 border-t border-zinc-800 text-center sm:text-left">
+            <a href="index.html"
+                class="inline-flex items-center gap-2 bg-zinc-800 hover:bg-purple-600 text-white text-sm font-bold px-4 py-2.5 rounded-lg transition-colors duration-300 shadow-md">
+                <i class="fa-solid fa-chevron-left text-xs"></i> Regresar a Inicio
+            </a>
+        </div>
+
+    </main>
+
+    <div class="sm:hidden fixed bottom-0 left-0 z-50 w-full h-16 bg-black border-t border-gray-800 shadow-2xl">
+        <div class="grid h-full max-w-lg grid-cols-5 mx-auto font-medium">
+
+            <a href="index.html"
+                class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+                <i class="fa-solid fa-newspaper text-xl text-purple-600"></i>
+                <span class="text-[10px] text-purple-600 mt-1">Noticias</span>
+            </a>
+
+            <a href="partidos.html"
+                class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+                <i
+                    class="fa-solid fa-calendar-days text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+                <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Partidos</span>
+            </a>
+
+            <a href="equipos.html"
+                class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+                <i
+                    class="fa-solid fa-shield-halved text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+                <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Equipos</span>
+            </a>
+
+            <a href="torneos.html"
+                class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+                <i
+                    class="fa-solid fa-trophy text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+                <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Torneos</span>
+            </a>
+
+            <a href="login.html"
+                class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+                <i
+                    class="fa-solid fa-user text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+                <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Perfil</span>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

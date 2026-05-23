@@ -1,16 +1,381 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Equipos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" type="text/css">
   <link rel="manifest" href="manifest.webmanifest">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<body>
+<body class="bg-[#252525] pb-20">
+  <nav class="bg-black border-b border-gray-800 px-4 py-3 shadow-lg">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
 
+      <div class="flex items-center gap-3 shrink-0">
+        <div
+          class="bg-purple-600 text-white w-10 h-10 rounded-lg flex items-center justify-center font-bold text-xl shadow-md overflow-hidden">
+          <img src="img/logo-uaq.png" class="w-full h-full object-cover">
+        </div>
+        <a href="index.html">
+          <span class="text-white font-extrabold text-lg sm:text-xl tracking-wider uppercase">
+            One<span class="text-purple-500">FIF</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="flex-1 max-w-md relative">
+        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+          <i class="fa-solid fa-magnifying-glass text-gray-400 text-sm"></i>
+        </div>
+        <input type="text" placeholder="Buscar..."
+          class="w-full bg-gray-800 text-white placeholder-gray-400 text-sm rounded-full pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:bg-gray-700 transition-all duration-300 border border-transparent focus:border-transparent">
+      </div>
+
+    </div>
+  </nav>
+
+  <section class="p-4 w-full bg-[#252525]">
+
+    <h2
+      class="text-xl font-bold text-white mb-5 flex items-center gap-2 uppercase tracking-wide border-l-4 border-purple-600 pl-2">
+      <i class="fa-solid fa-shield-halved text-purple-600"></i> REPRESENTATIVO
+    </h2>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+
+      <a href="equipo.html"
+        class="bg-zinc-800 border border-zinc-700 rounded-xl p-4 flex flex-col items-center text-center shadow-lg hover:border-purple-500 transition-all duration-300 transform hover:scale-[1.02] block group">
+        <div
+          class="w-16 h-16 bg-purple-600/10 border border-purple-500/30 rounded-full flex items-center justify-center text-purple-500 mb-3 text-2xl shadow-inner group-hover:scale-110 transition-transform duration-300">
+          <i class="fa-solid fa-shield-cat"></i>
+        </div>
+        <h3
+          class="text-white font-bold text-sm uppercase tracking-wide truncate w-full group-hover:text-purple-400 transition-colors">
+          FÚTBOL 11</h3>
+        <span class="text-xs text-zinc-400 mt-1 bg-zinc-900 px-2 py-0.5 rounded-full font-medium">3er Lugar</span>
+      </a>
+
+      <a href="equipo.html"
+        class="bg-zinc-800 border border-zinc-700 rounded-xl p-4 flex flex-col items-center text-center shadow-lg hover:border-purple-500 transition-all duration-300 transform hover:scale-[1.02] block group">
+        <div
+          class="w-16 h-16 bg-purple-600/10 border border-purple-500/30 rounded-full flex items-center justify-center text-purple-500 mb-3 text-2xl shadow-inner group-hover:scale-110 transition-transform duration-300">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <h3
+          class="text-white font-bold text-sm uppercase tracking-wide truncate w-full group-hover:text-purple-400 transition-colors">
+          Futbol 5</h3>
+        <span class="text-xs text-zinc-400 mt-1 bg-zinc-900 px-2 py-0.5 rounded-full font-medium">Cuartos de
+          Final</span>
+      </a>
+
+      <a href="equipo.html"
+        class="bg-zinc-800 border border-zinc-700 rounded-xl p-4 flex flex-col items-center text-center shadow-lg hover:border-purple-500 transition-all duration-300 transform hover:scale-[1.02] block group">
+        <div
+          class="w-16 h-16 bg-purple-600/10 border border-purple-500/30 rounded-full flex items-center justify-center text-purple-500 mb-3 text-2xl shadow-inner group-hover:scale-110 transition-transform duration-300">
+          <i class="fa-solid fa-shield-dog"></i>
+        </div>
+        <h3
+          class="text-white font-bold text-sm uppercase tracking-wide truncate w-full group-hover:text-purple-400 transition-colors">
+          Basketball</h3>
+        <span class="text-xs text-zinc-400 mt-1 bg-zinc-900 px-2 py-0.5 rounded-full font-medium">3er Lugar</span>
+      </a>
+
+      <a href="equipo.html"
+        class="bg-zinc-800 border border-zinc-700 rounded-xl p-4 flex flex-col items-center text-center shadow-lg hover:border-purple-500 transition-all duration-300 transform hover:scale-[1.02] block group">
+        <div
+          class="w-16 h-16 bg-purple-600/10 border border-purple-500/30 rounded-full flex items-center justify-center text-purple-500 mb-3 text-2xl shadow-inner group-hover:scale-110 transition-transform duration-300">
+          <i class="fa-solid fa-shield"></i>
+        </div>
+        <h3
+          class="text-white font-bold text-sm uppercase tracking-wide truncate w-full group-hover:text-purple-400 transition-colors">
+          Fútbol Femenil</h3>
+        <span class="text-xs text-zinc-400 mt-1 bg-zinc-900 px-2 py-0.5 rounded-full font-medium">Fase de liga</span>
+      </a>
+
+    </div>
+
+    <h2
+      class="text-xl font-bold text-white mb-5 flex items-center gap-2 uppercase tracking-wide border-l-4 border-purple-600 pl-2">
+      <i class="fa-solid fa-shield-halved text-purple-600"></i> SPORT FEST 2026
+    </h2>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+
+      <a href="equipo.html"
+        class="bg-zinc-800 border border-zinc-700 rounded-xl p-4 flex flex-col items-center text-center shadow-lg hover:border-purple-500 transition-all duration-300 transform hover:scale-[1.02] block group">
+        <div
+          class="w-16 h-16 bg-purple-600/10 border border-purple-500/30 rounded-full flex items-center justify-center text-purple-500 mb-3 text-2xl shadow-inner group-hover:scale-110 transition-transform duration-300">
+          <i class="fa-solid fa-shield-cat"></i>
+        </div>
+        <h3
+          class="text-white font-bold text-sm uppercase tracking-wide truncate w-full group-hover:text-purple-400 transition-colors">
+          Aston Birria</h3>
+        <span class="text-xs text-zinc-400 mt-1 bg-zinc-900 px-2 py-0.5 rounded-full font-medium">2do Lugar</span>
+      </a>
+
+      <a href="equipo.html"
+        class="bg-zinc-800 border border-zinc-700 rounded-xl p-4 flex flex-col items-center text-center shadow-lg hover:border-purple-500 transition-all duration-300 transform hover:scale-[1.02] block group">
+        <div
+          class="w-16 h-16 bg-purple-600/10 border border-purple-500/30 rounded-full flex items-center justify-center text-purple-500 mb-3 text-2xl shadow-inner group-hover:scale-110 transition-transform duration-300">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <h3
+          class="text-white font-bold text-sm uppercase tracking-wide truncate w-full group-hover:text-purple-400 transition-colors">
+          1000 de aura</h3>
+        <span class="text-xs text-zinc-400 mt-1 bg-zinc-900 px-2 py-0.5 rounded-full font-medium">1er lugar</span>
+      </a>
+
+      <a href="equipo.html"
+        class="bg-zinc-800 border border-zinc-700 rounded-xl p-4 flex flex-col items-center text-center shadow-lg hover:border-purple-500 transition-all duration-300 transform hover:scale-[1.02] block group">
+        <div
+          class="w-16 h-16 bg-purple-600/10 border border-purple-500/30 rounded-full flex items-center justify-center text-purple-500 mb-3 text-2xl shadow-inner group-hover:scale-110 transition-transform duration-300">
+          <i class="fa-solid fa-shield-dog"></i>
+        </div>
+        <h3
+          class="text-white font-bold text-sm uppercase tracking-wide truncate w-full group-hover:text-purple-400 transition-colors">
+          Cmmp</h3>
+        <span class="text-xs text-zinc-400 mt-1 bg-zinc-900 px-2 py-0.5 rounded-full font-medium">3er Lugar</span>
+      </a>
+
+      <a href="equipo.html"
+        class="bg-zinc-800 border border-zinc-700 rounded-xl p-4 flex flex-col items-center text-center shadow-lg hover:border-purple-500 transition-all duration-300 transform hover:scale-[1.02] block group">
+        <div
+          class="w-16 h-16 bg-purple-600/10 border border-purple-500/30 rounded-full flex items-center justify-center text-purple-500 mb-3 text-2xl shadow-inner group-hover:scale-110 transition-transform duration-300">
+          <i class="fa-solid fa-shield"></i>
+        </div>
+        <h3
+          class="text-white font-bold text-sm uppercase tracking-wide truncate w-full group-hover:text-purple-400 transition-colors">
+          Escencia FC</h3>
+        <span class="text-xs text-zinc-400 mt-1 bg-zinc-900 px-2 py-0.5 rounded-full font-medium">4to Lugar</span>
+      </a>
+
+      <a href="equipo.html"
+        class="bg-zinc-800 border border-zinc-700 rounded-xl p-4 flex flex-col items-center text-center shadow-lg hover:border-purple-500 transition-all duration-300 transform hover:scale-[1.02] block group">
+        <div
+          class="w-16 h-16 bg-purple-600/10 border border-purple-500/30 rounded-full flex items-center justify-center text-purple-500 mb-3 text-2xl shadow-inner group-hover:scale-110 transition-transform duration-300">
+          <i class="fa-solid fa-shield-cat"></i>
+        </div>
+        <h3
+          class="text-white font-bold text-sm uppercase tracking-wide truncate w-full group-hover:text-purple-400 transition-colors">
+          Arsenal</h3>
+        <span class="text-xs text-zinc-400 mt-1 bg-zinc-900 px-2 py-0.5 rounded-full font-medium">5to Lugar</span>
+      </a>
+
+      <a href="equipo.html"
+        class="bg-zinc-800 border border-zinc-700 rounded-xl p-4 flex flex-col items-center text-center shadow-lg hover:border-purple-500 transition-all duration-300 transform hover:scale-[1.02] block group">
+        <div
+          class="w-16 h-16 bg-purple-600/10 border border-purple-500/30 rounded-full flex items-center justify-center text-purple-500 mb-3 text-2xl shadow-inner group-hover:scale-110 transition-transform duration-300">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <h3
+          class="text-white font-bold text-sm uppercase tracking-wide truncate w-full group-hover:text-purple-400 transition-colors">
+          Gestados FC</h3>
+        <span class="text-xs text-zinc-400 mt-1 bg-zinc-900 px-2 py-0.5 rounded-full font-medium">6to Lugar</span>
+      </a>
+
+      <a href="equipo.html"
+        class="bg-zinc-800 border border-zinc-700 rounded-xl p-4 flex flex-col items-center text-center shadow-lg hover:border-purple-500 transition-all duration-300 transform hover:scale-[1.02] block group">
+        <div
+          class="w-16 h-16 bg-purple-600/10 border border-purple-500/30 rounded-full flex items-center justify-center text-purple-500 mb-3 text-2xl shadow-inner group-hover:scale-110 transition-transform duration-300">
+          <i class="fa-solid fa-shield-dog"></i>
+        </div>
+        <h3
+          class="text-white font-bold text-sm uppercase tracking-wide truncate w-full group-hover:text-purple-400 transition-colors">
+          Gunners</h3>
+        <span class="text-xs text-zinc-400 mt-1 bg-zinc-900 px-2 py-0.5 rounded-full font-medium">7to Lugar</span>
+      </a>
+
+      <a href="equipo.html"
+        class="bg-zinc-800 border border-zinc-700 rounded-xl p-4 flex flex-col items-center text-center shadow-lg hover:border-purple-500 transition-all duration-300 transform hover:scale-[1.02] block group">
+        <div
+          class="w-16 h-16 bg-purple-600/10 border border-purple-500/30 rounded-full flex items-center justify-center text-purple-500 mb-3 text-2xl shadow-inner group-hover:scale-110 transition-transform duration-300">
+          <i class="fa-solid fa-shield"></i>
+        </div>
+        <h3
+          class="text-white font-bold text-sm uppercase tracking-wide truncate w-full group-hover:text-purple-400 transition-colors">
+          Cuyeyos</h3>
+        <span class="text-xs text-zinc-400 mt-1 bg-zinc-900 px-2 py-0.5 rounded-full font-medium">8vo Lugar</span>
+      </a>
+
+      <a href="equipo.html"
+        class="bg-zinc-800 border border-zinc-700 rounded-xl p-4 flex flex-col items-center text-center shadow-lg hover:border-purple-500 transition-all duration-300 transform hover:scale-[1.02] block group">
+        <div
+          class="w-16 h-16 bg-purple-600/10 border border-purple-500/30 rounded-full flex items-center justify-center text-purple-500 mb-3 text-2xl shadow-inner group-hover:scale-110 transition-transform duration-300">
+          <i class="fa-solid fa-shield-cat"></i>
+        </div>
+        <h3
+          class="text-white font-bold text-sm uppercase tracking-wide truncate w-full group-hover:text-purple-400 transition-colors">
+          Tjalitos</h3>
+        <span class="text-xs text-zinc-400 mt-1 bg-zinc-900 px-2 py-0.5 rounded-full font-medium">9no Lugar</span>
+      </a>
+
+      <a href="equipo.html"
+        class="bg-zinc-800 border border-zinc-700 rounded-xl p-4 flex flex-col items-center text-center shadow-lg hover:border-purple-500 transition-all duration-300 transform hover:scale-[1.02] block group">
+        <div
+          class="w-16 h-16 bg-purple-600/10 border border-purple-500/30 rounded-full flex items-center justify-center text-purple-500 mb-3 text-2xl shadow-inner group-hover:scale-110 transition-transform duration-300">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <h3
+          class="text-white font-bold text-sm uppercase tracking-wide truncate w-full group-hover:text-purple-400 transition-colors">
+          Sirenas Blancas</h3>
+        <span class="text-xs text-zinc-400 mt-1 bg-zinc-900 px-2 py-0.5 rounded-full font-medium">10mo Lugar</span>
+      </a>
+
+      <a href="equipo.html"
+        class="bg-zinc-800 border border-zinc-700 rounded-xl p-4 flex flex-col items-center text-center shadow-lg hover:border-purple-500 transition-all duration-300 transform hover:scale-[1.02] block group">
+        <div
+          class="w-16 h-16 bg-purple-600/10 border border-purple-500/30 rounded-full flex items-center justify-center text-purple-500 mb-3 text-2xl shadow-inner group-hover:scale-110 transition-transform duration-300">
+          <i class="fa-solid fa-shield-dog"></i>
+        </div>
+        <h3
+          class="text-white font-bold text-sm uppercase tracking-wide truncate w-full group-hover:text-purple-400 transition-colors">
+          Troyanas</h3>
+        <span class="text-xs text-zinc-400 mt-1 bg-zinc-900 px-2 py-0.5 rounded-full font-medium">11vo Lugar</span>
+      </a>
+
+      <a href="equipo.html"
+        class="bg-zinc-800 border border-zinc-700 rounded-xl p-4 flex flex-col items-center text-center shadow-lg hover:border-purple-500 transition-all duration-300 transform hover:scale-[1.02] block group">
+        <div
+          class="w-16 h-16 bg-purple-600/10 border border-purple-500/30 rounded-full flex items-center justify-center text-purple-500 mb-3 text-2xl shadow-inner group-hover:scale-110 transition-transform duration-300">
+          <i class="fa-solid fa-shield"></i>
+        </div>
+        <h3
+          class="text-white font-bold text-sm uppercase tracking-wide truncate w-full group-hover:text-purple-400 transition-colors">
+          Jox´s</h3>
+        <span class="text-xs text-zinc-400 mt-1 bg-zinc-900 px-2 py-0.5 rounded-full font-medium">12vo Lugar</span>
+      </a>
+
+      <a href="equipo.html"
+        class="bg-zinc-800 border border-zinc-700 rounded-xl p-4 flex flex-col items-center text-center shadow-lg hover:border-purple-500 transition-all duration-300 transform hover:scale-[1.02] block group">
+        <div
+          class="w-16 h-16 bg-purple-600/10 border border-purple-500/30 rounded-full flex items-center justify-center text-purple-500 mb-3 text-2xl shadow-inner group-hover:scale-110 transition-transform duration-300">
+          <i class="fa-solid fa-shield-dog"></i>
+        </div>
+        <h3
+          class="text-white font-bold text-sm uppercase tracking-wide truncate w-full group-hover:text-purple-400 transition-colors">
+          Los+Capitos</h3>
+        <span class="text-xs text-zinc-400 mt-1 bg-zinc-900 px-2 py-0.5 rounded-full font-medium">13vo Lugar</span>
+      </a>
+
+      <a href="equipo.html"
+        class="bg-zinc-800 border border-zinc-700 rounded-xl p-4 flex flex-col items-center text-center shadow-lg hover:border-purple-500 transition-all duration-300 transform hover:scale-[1.02] block group">
+        <div
+          class="w-16 h-16 bg-purple-600/10 border border-purple-500/30 rounded-full flex items-center justify-center text-purple-500 mb-3 text-2xl shadow-inner group-hover:scale-110 transition-transform duration-300">
+          <i class="fa-solid fa-shield"></i>
+        </div>
+        <h3
+          class="text-white font-bold text-sm uppercase tracking-wide truncate w-full group-hover:text-purple-400 transition-colors">
+          Guayabitos</h3>
+        <span class="text-xs text-zinc-400 mt-1 bg-zinc-900 px-2 py-0.5 rounded-full font-medium">14vo Lugar</span>
+      </a>
+
+    </div>
+  </section>
+
+  <div class="sm:hidden fixed bottom-0 left-0 z-50 w-full h-16 bg-black border-t border-gray-800 shadow-2xl">
+    <div class="grid h-full max-w-lg grid-cols-5 mx-auto font-medium">
+
+      <a href="index.html"
+        class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+        <i
+          class="fa-solid fa-newspaper text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+        <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Noticias</span>
+      </a>
+
+      <a href="partidos.html"
+        class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+        <i
+          class="fa-solid fa-calendar-days text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+        <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Partidos</span>
+      </a>
+
+      <a href="equipos.html"
+        class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+        <i class="fa-solid fa-shield-halved text-xl text-purple-600"></i>
+        <span class="text-[10px] text-purple-600 mt-1">Equipos</span>
+      </a>
+
+      <a href="torneos.html"
+        class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+        <i
+          class="fa-solid fa-trophy text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+        <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Torneos</span>
+      </a>
+
+      <a href="login.html"
+        class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+        <i
+          class="fa-solid fa-user text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+        <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Perfil</span>
+      </a>
+
+    </div>
+  </div>
+
+  <footer class="bg-black border-t border-gray-800 py-6 px-4 mt-8 shadow-inner">
+    <div
+      class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+      <div class="flex flex-col gap-4">
+        <div class="flex flex-row items-center gap-6 justify-center sm:justify-start">
+          <a href="https://www.facebook.com/fifuaq" target="_blank" rel="noopener noreferrer"
+            class="flex items-center gap-2 text-gray-400 hover:text-purple-600 transition-all duration-300 transform hover:scale-105 text-lg decoration-none">
+            <svg fill="#9333ea" class="h-6 w-6 shrink-0" viewBox="-337 273 123.5 256"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M-260.9,327.8c0-10.3,9.2-14,19.5-14c10.3,0,21.3,3.2,21.3,3.2l6.6-39.2c0,0-14-4.8-47.4-4.8c-20.5,0-32.4,7.8-41.1,19.3 c-8.2,10.9-8.5,28.4-8.5,39.7v25.7H-337V396h26.5v133h49.6V396h39.3l2.9-38.3h-42.2V327.8z">
+              </path>
+            </svg>
+            <span class="text-white text-sm font-medium">Facultad de Informática - UAQ</span>
+          </a>
+
+          <a href="https://www.instagram.com/informaticauaq/?hl=es-la" target="_blank" rel="noopener noreferrer"
+            class="flex items-center gap-2 text-gray-400 hover:text-purple-600 transition-all duration-300 transform hover:scale-105 decoration-none group">
+            <svg fill="#820d7e" class="h-6 w-6 shrink-0 group-hover:fill-purple-600 transition-colors duration-300"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12,9.52A2.48,2.48,0,1,0,14.48,12,2.48,2.48,0,0,0,12,9.52Zm9.93-2.45a6.53,6.53,0,0,0-.42-2.26,4,4,0,0,0-2.32-2.32,6.53,6.53,0,0,0-2.26-.42C15.64,2,15.26,2,12,2s-3.64,0-4.93.07a6.53,6.53,0,0,0-2.26-.42A4,4,0,0,0,2.49,4.81a6.53,6.53,0,0,0-.42,2.26C2,8.36,2,8.74,2,12s0,3.64.07,4.93a6.86,6.86,0,0,0,.42,2.27,3.94,3.94,0,0,0,.91,1.4,3.89,3.89,0,0,0,1.41.91,6.53,6.53,0,0,0,2.26.42C8.36,22,8.74,22,12,22s3.64,0,4.93-.07a6.53,6.53,0,0,0,2.26-.42,3.89,3.89,0,0,0,1.41-.91,3.94,3.94,0,0,0,.91-1.4,6.6,6.6,0,0,0,.42-2.27C22,15.64,22,15.26,22,12S22,8.36,21.93,7.07Zm-2.54,8A5.73,5.73,0,0,1,19,16.87,3.86,3.86,0,0,1,16.87,19a5.73,5.73,0,0,1-1.81.35c-.79,0-1,0-3.06,0s-2.27,0-3.06,0A5.73,5.73,0,0,1,7.13,19a3.51,3.51,0,0,1-1.31-.86A3.51,3.51,0,0,1,5,16.87a5.49,5.49,0,0,1-.34-1.81c0-.79,0-1,0-3.06s0-2.27,0-3.06A5.49,5.49,0,0,1,5,7.13a3.51,3.51,0,0,1,.86-1.31A3.59,3.59,0,0,1,7.13,5a5.73,5.73,0,0,1,1.81-.35h0c.79,0,1,0,3.06,0s2.27,0,3.06,0A5.73,5.73,0,0,1,16.87,5a3.51,3.51,0,0,1,1.31.86A3.51,3.51,0,0,1,19,7.13a5.73,5.73,0,0,1,.35,1.81c0,.79,0,1,0,3.06S19.42,14.27,19.39,15.06Zm-1.6-7.44a2.38,2.38,0,0,0-1.41-1.41A4,4,0,0,0,15,6c-.78,0-1,0-3,0s-2.22,0-3,0a4,4,0,0,0-1.38.26A2.38,2.38,0,0,0,6.21,7.62,4.27,4.27,0,0,0,6,9c0,.78,0,1,0,3s0,2.22,0,3a4.27,4.27,0,0,0,.26,1.38,2.38,2.38,0,0,0,1.41,1.41A4.27,4.27,0,0,0,9,18.05H9c.78,0,1,0,3,0s2.22,0,3,0a4,4,0,0,0,1.38-.26,2.38,2.38,0,0,0,1.41-1.41A4,4,0,0,0,18.05,15c0-.78,0-1,0-3s0-2.22,0-3A3.78,3.78,0,0,0,17.79,7.62ZM12,15.82A3.81,3.81,0,0,1,8.19,12h0A3.82,3.82,0,1,1,12,15.82Zm4-6.89a.9.9,0,0,1,0-1.79h0a.9.9,0,0,1,0,1.79Z">
+              </path>
+            </svg>
+            <span class="text-white text-sm font-medium">@informaticauaq</span>
+          </a>
+        </div>
+
+        <div class="flex flex-row items-center gap-6 justify-center sm:justify-start">
+          <a href="https://www.facebook.com/profile.php?id=100068423836267" target="_blank" rel="noopener noreferrer"
+            class="flex items-center gap-2 text-gray-400 hover:text-purple-600 transition-all duration-300 transform hover:scale-105 text-lg decoration-none">
+            <svg fill="#9333ea" class="h-6 w-6 shrink-0" viewBox="-337 273 123.5 256"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M-260.9,327.8c0-10.3,9.2-14,19.5-14c10.3,0,21.3,3.2,21.3,3.2l6.6-39.2c0,0-14-4.8-47.4-4.8c-20.5,0-32.4,7.8-41.1,19.3 c-8.2,10.9-8.5,28.4-8.5,39.7v25.7H-337V396h26.5v133h49.6V396h39.3l2.9-38.3h-42.2V327.8z">
+              </path>
+            </svg>
+            <span class="text-white text-sm font-medium">Informática Troyanos Deportes</span>
+          </a>
+
+          <a href="https://www.instagram.com/deportes_troyanos" target="_blank" rel="noopener noreferrer"
+            class="flex items-center gap-2 text-gray-400 hover:text-purple-600 transition-all duration-300 transform hover:scale-105 decoration-none group">
+            <svg fill="#820d7e" class="h-6 w-6 shrink-0 group-hover:fill-purple-600 transition-colors duration-300"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12,9.52A2.48,2.48,0,1,0,14.48,12,2.48,2.48,0,0,0,12,9.52Zm9.93-2.45a6.53,6.53,0,0,0-.42-2.26,4,4,0,0,0-2.32-2.32,6.53,6.53,0,0,0-2.26-.42C15.64,2,15.26,2,12,2s-3.64,0-4.93.07a6.53,6.53,0,0,0-2.26.42A4,4,0,0,0,2.49,4.81a6.53,6.53,0,0,0-.42,2.26C2,8.36,2,8.74,2,12s0,3.64.07,4.93a6.86,6.86,0,0,0,.42,2.27,3.94,3.94,0,0,0,.91,1.4,3.89,3.89,0,0,0,1.41.91,6.53,6.53,0,0,0,2.26.42C8.36,22,8.74,22,12,22s3.64,0,4.93-.07a6.53,6.53,0,0,0,2.26-.42,3.89,3.89,0,0,0,1.41-.91,3.94,3.94,0,0,0,.91-1.4,6.6,6.6,0,0,0,.42-2.27C22,15.64,22,15.26,22,12S22,8.36,21.93,7.07Zm-2.54,8A5.73,5.73,0,0,1,19,16.87,3.86,3.86,0,0,1,16.87,19a5.73,5.73,0,0,1-1.81.35c-.79,0-1,0-3.06,0s-2.27,0-3.06,0A5.73,5.73,0,0,1,7.13,19a3.51,3.51,0,0,1-1.31-.86A3.51,3.51,0,0,1,5,16.87a5.49,5.49,0,0,1-.34-1.81c0-.79,0-1,0-3.06s0-2.27,0-3.06A5.49,5.49,0,0,1,5,7.13a3.51,3.51,0,0,1,.86-1.31A3.59,3.59,0,0,1,7.13,5a5.73,5.73,0,0,1,1.81-.35h0c.79,0,1,0,3.06,0s2.27,0,3.06,0A5.73,5.73,0,0,1,16.87,5a3.51,3.51,0,0,1,1.31.86A3.51,3.51,0,0,1,19,7.13a5.73,5.73,0,0,1,.35,1.81c0,.79,0,1,0,3.06S19.42,14.27,19.39,15.06Zm-1.6-7.44a2.38,2.38,0,0,0-1.41-1.41A4,4,0,0,0,15,6c-.78,0-1,0-3,0s-2.22,0-3,0a4,4,0,0,0-1.38.26A2.38,2.38,0,0,0,6.21,7.62,4.27,4.27,0,0,0,6,9c0,.78,0,1,0,3s0,2.22,0,3a4.27,4.27,0,0,0,.26,1.38,2.38,2.38,0,0,0,1.41,1.41A4.27,4.27,0,0,0,9,18.05H9c.78,0,1,0,3,0s2.22,0,3,0a4,4,0,0,0,1.38-.26,2.38,2.38,0,0,0,1.41-1.41A4,4,0,0,0,18.05,15c0-.78,0-1,0-3s0-2.22,0-3A3.78,3.78,0,0,0,17.79,7.62ZM12,15.82A3.81,3.81,0,0,1,8.19,12h0A3.82,3.82,0,1,1,12,15.82Zm4-6.89a.9.9,0,0,1,0-1.79h0a.9.9,0,0,1,0,1.79Z">
+              </path>
+            </svg>
+            <span class="text-white text-sm font-medium">@deportes_troyanos</span>
+          </a>
+        </div>
+      </div>
+      <div class="text-gray-400 text-sm">
+        <p>&copy; 2026 <span class="text-white font-bold uppercase tracking-wider">One<span
+              class="text-purple-600">FIF</span></span>. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="funciones.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Equipo - One FIF</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+
+<body class="bg-[#252525] text-zinc-300 antialiased min-h-screen pb-20">
+
+    <nav class="bg-black border-b border-gray-800 px-4 py-3 shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+
+            <div class="flex items-center gap-3 shrink-0">
+                <a href="equipos.html" class="text-gray-400 hover:text-purple-500 mr-1 text-xl transition-colors"
+                    aria-label="Volver a equipos">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <div
+                    class="bg-purple-600 text-white w-10 h-10 rounded-lg flex items-center justify-center font-bold text-xl shadow-md overflow-hidden">
+                    <img src="img/logo-uaq.png" class="w-full h-full object-cover" alt="Logo UAQ">
+                </div>
+                <a href="index.html">
+                    <span class="text-white font-extrabold text-lg sm:text-xl tracking-wider uppercase">
+                        One<span class="text-purple-500">FIF</span>
+                    </span>
+                </a>
+            </div>
+
+            <div class="flex-1 max-w-md relative">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <i class="fa-solid fa-magnifying-glass text-gray-400 text-sm"></i>
+                </div>
+                <input type="text" placeholder="Buscar..."
+                    class="w-full bg-gray-800 text-white placeholder-gray-400 text-sm rounded-full pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:bg-gray-700 transition-all duration-300 border border-transparent focus:border-transparent">
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="max-w-3xl mx-auto px-4 py-6">
+
+        <div
+            class="bg-zinc-800 border border-zinc-700 rounded-xl p-5 shadow-lg flex flex-col items-center text-center mb-6">
+            <div
+                class="w-20 h-20 bg-purple-600/10 border-2 border-purple-500 rounded-full flex items-center justify-center text-purple-500 mb-3 text-4xl shadow-inner">
+                <i class="fa-solid fa-shield-cat"></i>
+            </div>
+            <h1 class="text-2xl font-black text-white uppercase tracking-wide">Aston Birria</h1>
+            <span class="text-xs font-bold text-purple-400 uppercase tracking-widest mt-1">Sport Fest 2026 • 2do
+                Lugar</span>
+
+            <div class="grid grid-cols-4 gap-2 w-full mt-5 pt-4 border-t border-zinc-700/50 max-w-sm">
+                <div class="flex flex-col">
+                    <span class="text-zinc-500 text-[10px] uppercase font-bold tracking-wider">PJ</span>
+                    <span class="text-white font-black text-base">9</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-emerald-500 text-[10px] uppercase font-bold tracking-wider">G</span>
+                    <span class="text-white font-black text-base">9</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-amber-500 text-[10px] uppercase font-bold tracking-wider">E</span>
+                    <span class="text-white font-black text-base">0</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-rose-500 text-[10px] uppercase font-bold tracking-wider">P</span>
+                    <span class="text-white font-black text-base">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-10">
+            <h2
+                class="text-lg font-bold text-white mb-4 flex items-center gap-2 uppercase tracking-wide border-l-4 border-purple-600 pl-2">
+                <i class="fa-solid fa-users text-purple-600"></i> Lista de Jugadores
+            </h2>
+
+            <div class="bg-zinc-800 border border-zinc-700 rounded-xl shadow-lg overflow-hidden">
+                <table class="w-full text-left border-collapse">
+
+                    <thead
+                        class="bg-zinc-900 border-b border-zinc-700 text-zinc-400 text-xs uppercase tracking-wider font-bold">
+                        <tr>
+                            <th class="py-3 px-4 text-center w-12">#</th>
+                            <th class="py-3 px-2">Jugador</th>
+                            <th class="py-3 px-3 text-center w-16">
+                                <i class="fa-solid fa-soccer-ball text-zinc-400 sm:mr-1"></i>
+                                <span class="hidden sm:inline">Goles</span>
+                            </th>
+                            <th class="py-3 px-3 text-center w-16">
+                                <i class="fa-solid fa-shoe-prints text-zinc-400 sm:mr-1 transform -rotate-90"></i>
+                                <span class="hidden sm:inline">Asist.</span>
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="divide-y divide-zinc-700/50 text-sm text-white">
+
+                        <tr class="hover:bg-zinc-700/30 transition-colors">
+                            <td class="py-3 px-4 font-mono font-bold text-purple-400 text-center">45</td>
+                            <td class="py-3 px-2 font-semibold">Alexis Torres</td>
+                            <td class="py-3 px-3 font-bold text-center bg-purple-600/5 text-purple-300">15</td>
+                            <td class="py-3 px-3 font-medium text-center text-zinc-400">8</td>
+                        </tr>
+
+                        <tr class="hover:bg-zinc-700/30 transition-colors">
+                            <td class="py-3 px-4 font-mono font-bold text-purple-400 text-center">7</td>
+                            <td class="py-3 px-2 font-semibold">Axel Madrid</td>
+                            <td class="py-3 px-3 font-bold text-center bg-purple-600/5 text-purple-300">12</td>
+                            <td class="py-3 px-3 font-medium text-center text-zinc-400">10</td>
+                        </tr>
+
+                        <tr class="hover:bg-zinc-700/30 transition-colors">
+                            <td class="py-3 px-4 font-mono font-bold text-purple-400 text-center">10</td>
+                            <td class="py-3 px-2 font-semibold">Diego Valle</td>
+                            <td class="py-3 px-3 font-bold text-center bg-purple-600/5 text-purple-300">11</td>
+                            <td class="py-3 px-3 font-medium text-center text-zinc-400">12</td>
+                        </tr>
+
+                        <tr class="hover:bg-zinc-700/30 transition-colors">
+                            <td class="py-3 px-4 font-mono font-bold text-purple-400 text-center">11</td>
+                            <td class="py-3 px-2 font-semibold">Belman </td>
+                            <td class="py-3 px-3 font-bold text-center bg-purple-600/5 text-purple-300">12</td>
+                            <td class="py-3 px-3 font-medium text-center text-zinc-400">5</td>
+                        </tr>
+
+                        <tr class="hover:bg-zinc-700/30 transition-colors">
+                            <td class="py-3 px-4 font-mono font-bold text-purple-400 text-center">69</td>
+                            <td class="py-3 px-2 font-semibold">David Camacho</td>
+                            <td class="py-3 px-3 font-bold text-center bg-purple-600/5 text-purple-300">6</td>
+                            <td class="py-3 px-3 font-medium text-center text-zinc-400">2</td>
+                        </tr>
+                        <tr class="hover:bg-zinc-700/30 transition-colors">
+                            <td class="py-3 px-4 font-mono font-bold text-purple-400 text-center">3</td>
+                            <td class="py-3 px-2 font-semibold">Carlos Lopez</td>
+                            <td class="py-3 px-3 font-bold text-center bg-purple-600/5 text-purple-300">3</td>
+                            <td class="py-3 px-3 font-medium text-center text-zinc-400">0</td>
+                        </tr>
+                        <tr class="hover:bg-zinc-700/30 transition-colors">
+                            <td class="py-3 px-4 font-mono font-bold text-purple-400 text-center">4</td>
+                            <td class="py-3 px-2 font-semibold">Miguel Mejia</td>
+                            <td class="py-3 px-3 font-bold text-center bg-purple-600/5 text-purple-300">0</td>
+                            <td class="py-3 px-3 font-medium text-center text-zinc-400">2</td>
+                        </tr>
+                        <tr class="hover:bg-zinc-700/30 transition-colors">
+                            <td class="py-3 px-4 font-mono font-bold text-purple-400 text-center">1</td>
+                            <td class="py-3 px-2 font-semibold">Mario Ramirez</td>
+                            <td class="py-3 px-3 font-bold text-center bg-purple-600/5 text-purple-300">0</td>
+                            <td class="py-3 px-3 font-medium text-center text-zinc-400">1</td>
+                        </tr>
+                        <tr class="hover:bg-zinc-700/30 transition-colors">
+                            <td class="py-3 px-4 font-mono font-bold text-purple-400 text-center">19</td>
+                            <td class="py-3 px-2 font-semibold">Ariel Rodriguez</td>
+                            <td class="py-3 px-3 font-bold text-center bg-purple-600/5 text-purple-300">3</td>
+                            <td class="py-3 px-3 font-medium text-center text-zinc-400">2</td>
+                        </tr>
+                        <tr class="hover:bg-zinc-700/30 transition-colors">
+                            <td class="py-3 px-4 font-mono font-bold text-purple-400 text-center">23</td>
+                            <td class="py-3 px-2 font-semibold">Carlos Rodriguez</td>
+                            <td class="py-3 px-3 font-bold text-center bg-purple-600/5 text-purple-300">0</td>
+                            <td class="py-3 px-3 font-medium text-center text-zinc-400">0</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="sm:hidden fixed bottom-0 left-0 z-50 w-full h-16 bg-black border-t border-gray-800 shadow-2xl">
+        <div class="grid h-full max-w-lg grid-cols-5 mx-auto font-medium">
+
+            <a href="index.html"
+                class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+                <i
+                    class="fa-solid fa-newspaper text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+                <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Noticias</span>
+            </a>
+
+            <a href="partidos.html"
+                class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+                <i
+                    class="fa-solid fa-calendar-days text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+                <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Partidos</span>
+            </a>
+
+            <a href="equipos.html"
+                class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+                <i class="fa-solid fa-shield-halved text-xl text-purple-600"></i>
+                <span class="text-[10px] text-purple-600 mt-1">Equipos</span>
+            </a>
+
+            <a href="torneos.html"
+                class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+                <i
+                    class="fa-solid fa-trophy text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+                <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Torneos</span>
+            </a>
+
+            <a href="login.html"
+                class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+                <i
+                    class="fa-solid fa-user text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+                <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Perfil</span>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
