@@ -1,56 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Partidos</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Torneos - One FIF</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="styles.css" type="text/css">
   <link rel="manifest" href="manifest.webmanifest">
-
 </head>
 
-<body>
-  <!-- Barra Superior -->
-  <div class="top-bar">
-    <div class="logo">
-      <img src="img\logo-uaq.png" alt="" width="60" height="70"> <a href="index.html">One FIF</a>
-    </div>
-    <div class="external-links">
-      <div class="center-text">
-        <table>
-          <tr>
-            <a href="partidos.html">
-              Partidos
-            </a>
-          </tr>
-          <tr>
-            <a href="equipos.html">
-              Equipos
-            </a>
-          </tr>
-          <tr>
-            <a href="torneos.html">
-              Torneos
-            </a>
-          </tr>
-        </table>
+<body class="bg-[#252525] text-zinc-300 antialiased min-h-screen pb-20">
+
+  <nav class="bg-black border-b border-gray-800 px-4 py-3 shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+
+      <div class="flex items-center gap-3 shrink-0">
+        <div
+          class="bg-purple-600 text-white w-10 h-10 rounded-lg flex items-center justify-center font-bold text-xl shadow-md overflow-hidden">
+          <img src="img/logo-uaq.png" class="w-full h-full object-cover" alt="Logo UAQ">
+        </div>
+        <a href="index.html">
+          <span class="text-white font-extrabold text-lg sm:text-xl tracking-wider uppercase">
+            One<span class="text-purple-500">FIF</span>
+          </span>
+        </a>
       </div>
+
+      <div class="flex-1 max-w-md relative">
+        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+          <i class="fa-solid fa-magnifying-glass text-gray-400 text-sm"></i>
+        </div>
+        <input type="text" placeholder="Buscar torneos..."
+          class="w-full bg-gray-800 text-white placeholder-gray-400 text-sm rounded-full pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:bg-gray-700 transition-all duration-300 border border-transparent focus:border-transparent">
+      </div>
+
     </div>
-    <div class="derecha"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-        class="bi bi-search" viewBox="0 0 16 16">
-        <path
-          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-      </svg>
+  </nav>
+
+  <main class="max-w-3xl mx-auto px-4 py-6">
+
+    <div class="flex items-center justify-between mb-6 border-l-4 border-purple-600 pl-2">
+      <h1 class="text-xl font-black text-white uppercase tracking-wide">Torneos Disponibles</h1>
+      <span class="text-xs text-purple-400 font-bold bg-purple-600/10 px-2 py-1 rounded">FIF</span>
     </div>
-    <div class="login">
-      <a href="login.html">Iniciar sesion</a>
+
+    <div class="grid grid-cols-1 gap-4">
+
+      <a href="torneo.html"
+        class="bg-zinc-800 border border-zinc-700 rounded-xl overflow-hidden shadow-md hover:border-purple-500/50 transition-all duration-300 block group">
+        <div class="h-24 bg-gradient-to-r from-purple-900 to-indigo-950 p-4 flex items-center justify-between relative">
+          <div
+            class="text-purple-500 text-4xl opacity-20 absolute right-4 bottom-2 group-hover:scale-110 transition-transform duration-300">
+            <i class="fa-solid fa-soccer-ball"></i>
+          </div>
+          <div>
+            <span
+              class="bg-emerald-500 text-white text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">En
+              Curso</span>
+            <h2 class="text-lg font-black text-white uppercase mt-1 tracking-wide">SportFest - Fútbol 2026</h2>
+          </div>
+          <div
+            class="text-white text-2xl bg-purple-600/20 w-12 h-12 rounded-lg flex items-center justify-center border border-purple-500/30">
+            <i class="fa-solid fa-circle-play text-purple-400"></i>
+          </div>
+        </div>
+        <div class="p-4 flex items-center justify-between text-xs text-zinc-400 font-medium">
+          <div class="flex items-center gap-1.5">
+            <i class="fa-solid fa-shield-halved text-purple-500"></i>
+            <span>14 Equipos inscritos</span>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <i class="fa-solid fa-calendar text-zinc-500"></i>
+            <span>Mayo 2026</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="torneo.html"
+        class="bg-zinc-800 border border-zinc-700 rounded-xl overflow-hidden shadow-md hover:border-zinc-500/50 transition-all duration-300 block group opacity-85">
+        <div class="h-24 bg-gradient-to-r from-zinc-900 to-zinc-950 p-4 flex items-center justify-between relative">
+          <div
+            class="text-zinc-600 text-4xl opacity-20 absolute right-4 bottom-2 group-hover:scale-110 transition-transform duration-300">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <div>
+            <span
+              class="bg-zinc-600 text-white text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">Finalizado</span>
+            <h2 class="text-lg font-black text-zinc-400 uppercase mt-1 tracking-wide">Intercampus 2026</h2>
+          </div>
+          <div
+            class="text-zinc-400 text-xl bg-zinc-700/20 w-12 h-12 rounded-lg flex items-center justify-center border border-zinc-600/30">
+            <i class="fa-solid fa-square-poll-vertical text-zinc-500"></i>
+          </div>
+        </div>
+        <div class="p-4 flex items-center justify-between text-xs text-zinc-500 font-medium bg-zinc-900/20">
+          <div class="flex items-center gap-1.5">
+            <i class="fa-solid fa-medal text-amber-600"></i>
+            <span>Campeon: <span class="text-zinc-300 font-bold">Informatica 1</span></span>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <i class="fa-solid fa-calendar text-zinc-600"></i>
+            <span>Febrero - Marzo 2026</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="torneo.html"
+        class="bg-zinc-800 border border-zinc-700 rounded-xl overflow-hidden shadow-md hover:border-purple-500/50 transition-all duration-300 block group">
+        <div class="h-24 bg-gradient-to-r from-purple-950 to-slate-900 p-4 flex items-center justify-between relative">
+          <div
+            class="text-purple-500 text-4xl opacity-20 absolute right-4 bottom-2 group-hover:scale-110 transition-transform duration-300">
+            <i class="fa-solid fa-volleyball"></i>
+          </div>
+          <div>
+            <span
+              class="bg-amber-600 text-white text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">Próximamente</span>
+            <h2 class="text-lg font-black text-white uppercase mt-1 tracking-wide">Sportfest - Volleyball</h2>
+          </div>
+          <div
+            class="text-white text-2xl bg-zinc-700/20 w-12 h-12 rounded-lg flex items-center justify-center border border-zinc-600/30">
+            <i class="fa-solid fa-lock text-zinc-500"></i>
+          </div>
+        </div>
+        <div class="p-4 flex items-center justify-between text-xs text-zinc-400 font-medium">
+          <div class="flex items-center gap-1.5">
+            <i class="fa-solid fa-shield-halved text-purple-500"></i>
+            <span>8 Equipos pre-inscritos</span>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <i class="fa-solid fa-calendar text-zinc-500"></i>
+            <span>Septiembre 2026</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="torneo.html"
+        class="bg-zinc-800 border border-zinc-700 rounded-xl overflow-hidden shadow-md hover:border-purple-500/50 transition-all duration-300 block group">
+        <div
+          class="h-24 bg-gradient-to-r from-amber-950/40 to-purple-950 p-4 flex items-center justify-between relative">
+          <div
+            class="text-purple-500 text-4xl opacity-20 absolute right-4 bottom-2 group-hover:scale-110 transition-transform duration-300">
+            <i class="fa-solid fa-basketball"></i>
+          </div>
+          <div>
+            <span
+              class="bg-amber-600 text-white text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">Próximamente</span>
+            <h2 class="text-lg font-black text-white uppercase mt-1 tracking-wide">Sportfest 2026 - Basketball</h2>
+          </div>
+          <div
+            class="text-white text-2xl bg-zinc-700/20 w-12 h-12 rounded-lg flex items-center justify-center border border-zinc-600/30">
+            <i class="fa-solid fa-lock text-zinc-500"></i>
+          </div>
+        </div>
+        <div class="p-4 flex items-center justify-between text-xs text-zinc-400 font-medium">
+          <div class="flex items-center gap-1.5">
+            <i class="fa-solid fa-shield-halved text-purple-500"></i>
+            <span>10 Equipos pre-inscritos</span>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <i class="fa-solid fa-calendar text-zinc-500"></i>
+            <span>Octubre 2026</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <div class="sm:hidden fixed bottom-0 left-0 z-50 w-full h-16 bg-black border-t border-gray-800 shadow-2xl">
+    <div class="grid h-full max-w-lg grid-cols-5 mx-auto font-medium">
+
+      <a href="index.html"
+        class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+        <i
+          class="fa-solid fa-newspaper text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+        <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Noticias</span>
+      </a>
+
+      <a href="partidos.html"
+        class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+        <i
+          class="fa-solid fa-calendar-days text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+        <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Partidos</span>
+      </a>
+
+      <a href="equipos.html"
+        class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+        <i
+          class="fa-solid fa-shield-halved text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+        <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Equipos</span>
+      </a>
+
+      <a href="torneos.html"
+        class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+        <i class="fa-solid fa-trophy text-xl text-purple-600"></i>
+        <span class="text-[10px] text-purple-600 mt-1">Torneos</span>
+      </a>
+
+      <a href="login.html"
+        class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+        <i
+          class="fa-solid fa-user text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+        <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Perfil</span>
+      </a>
+
     </div>
   </div>
-  </div>
-  <!-- Barra Superior -->
+
 </body>
 
 </html>

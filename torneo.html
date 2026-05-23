@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Posiciones - One FIF</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+
+<body class="bg-[#252525] text-zinc-300 antialiased min-h-screen pb-20">
+
+    <nav class="bg-black border-b border-gray-800 px-4 py-3 shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+
+            <div class="flex items-center gap-3 shrink-0">
+                <a href="torneos.html" class="text-gray-400 hover:text-purple-500 mr-1 text-xl transition-colors"
+                    aria-label="Volver a torneos">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <div
+                    class="bg-purple-600 text-white w-10 h-10 rounded-lg flex items-center justify-center font-bold text-xl shadow-md overflow-hidden">
+                    <img src="img/logo-uaq.png" class="w-full h-full object-cover" alt="Logo UAQ">
+                </div>
+                <a href="index.html">
+                    <span class="text-white font-extrabold text-lg sm:text-xl tracking-wider uppercase">
+                        One<span class="text-purple-500">FIF</span>
+                    </span>
+                </a>
+            </div>
+
+            <div class="flex-1 max-w-md relative">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <i class="fa-solid fa-magnifying-glass text-gray-400 text-sm"></i>
+                </div>
+                <input type="text" placeholder="Buscar..."
+                    class="w-full bg-gray-800 text-white placeholder-gray-400 text-sm rounded-full pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:bg-gray-700 transition-all duration-300 border border-transparent focus:border-transparent">
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="max-w-3xl mx-auto px-4 py-6">
+
+        <div
+            class="bg-zinc-800 border border-zinc-700 rounded-xl p-5 shadow-lg flex flex-col items-center text-center mb-6">
+            <div
+                class="w-16 h-16 bg-purple-600/10 border border-purple-500/30 rounded-full flex items-center justify-center text-purple-500 mb-3 text-3xl shadow-inner">
+                <i class="fa-solid fa-trophy"></i>
+            </div>
+            <h1 class="text-2xl font-black text-white uppercase tracking-wide">Sport Fest 2026</h1>
+            <span class="text-xs font-bold text-purple-400 uppercase tracking-widest mt-1">Fútbol General • Tabla de
+                Posiciones</span>
+        </div>
+
+        <div class="bg-zinc-800 border border-zinc-700 rounded-xl shadow-lg overflow-hidden mb-10">
+            <table class="w-full text-left border-collapse">
+
+                <thead
+                    class="bg-zinc-900 border-b border-zinc-700 text-zinc-400 text-[11px] uppercase tracking-wider font-black">
+                    <tr>
+                        <th class="py-3 px-3 text-center w-10">Pos</th>
+                        <th class="py-3 px-2">Equipo</th>
+                        <th class="py-3 px-2 text-center w-10">PJ</th>
+                        <th class="py-3 px-2 text-center w-10 hidden sm:table-cell">G</th>
+                        <th class="py-3 px-2 text-center w-10 hidden sm:table-cell">E</th>
+                        <th class="py-3 px-2 text-center w-10 hidden sm:table-cell">P</th>
+                        <th class="py-3 px-3 text-center w-14 text-purple-400 bg-purple-600/5">Pts</th>
+                    </tr>
+                </thead>
+
+                <tbody class="divide-y divide-zinc-700/50 text-sm text-white">
+
+                    <tr class="hover:bg-zinc-700/30 transition-colors">
+                        <td class="py-3 px-3 font-mono font-bold text-center text-amber-500">1</td>
+                        <td class="py-3 px-2 font-bold truncate max-w-[140px]">Aston Birria</td>
+                        <td class="py-3 px-2 text-center text-zinc-400">9</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">8</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">1</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">0</td>
+                        <td class="py-3 px-3 font-black text-center bg-purple-600/10 text-purple-300">25</td>
+                    </tr>
+
+                    <tr class="hover:bg-zinc-700/30 transition-colors">
+                        <td class="py-3 px-3 font-mono font-bold text-center text-zinc-400">2</td>
+                        <td class="py-3 px-2 font-bold truncate max-w-[140px]">1000 de aura</td>
+                        <td class="py-3 px-2 text-center text-zinc-400">9</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">7</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">1</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">1</td>
+                        <td class="py-3 px-3 font-black text-center bg-purple-600/10 text-purple-300">22</td>
+                    </tr>
+
+                    <tr class="hover:bg-zinc-700/30 transition-colors">
+                        <td class="py-3 px-3 font-mono font-bold text-center text-amber-700">3</td>
+                        <td class="py-3 px-2 font-semibold truncate max-w-[140px]">Cmmp</td>
+                        <td class="py-3 px-2 text-center text-zinc-400">9</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">6</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">2</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">1</td>
+                        <td class="py-3 px-3 font-black text-center bg-purple-600/10 text-purple-300">20</td>
+                    </tr>
+
+                    <tr class="hover:bg-zinc-700/30 transition-colors">
+                        <td class="py-3 px-3 font-mono font-bold text-center text-zinc-500">4</td>
+                        <td class="py-3 px-2 font-semibold truncate max-w-[140px]">Escencia FC</td>
+                        <td class="py-3 px-2 text-center text-zinc-400">9</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">5</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">2</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">2</td>
+                        <td class="py-3 px-3 font-black text-center bg-purple-600/10 text-purple-300">17</td>
+                    </tr>
+
+                    <tr class="hover:bg-zinc-700/30 transition-colors">
+                        <td class="py-3 px-3 font-mono text-center text-zinc-500">5</td>
+                        <td class="py-3 px-2 font-medium truncate max-w-[140px]">Arsenal</td>
+                        <td class="py-3 px-2 text-center text-zinc-400">9</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">5</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">1</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">3</td>
+                        <td class="py-3 px-3 font-black text-center bg-purple-600/10 text-purple-300">16</td>
+                    </tr>
+
+                    <tr class="hover:bg-zinc-700/30 transition-colors">
+                        <td class="py-3 px-3 font-mono text-center text-zinc-500">6</td>
+                        <td class="py-3 px-2 font-medium truncate max-w-[140px]">Gestados FC</td>
+                        <td class="py-3 px-2 text-center text-zinc-400">9</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">4</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">2</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">3</td>
+                        <td class="py-3 px-3 font-black text-center bg-purple-600/10 text-purple-300">14</td>
+                    </tr>
+
+                    <tr class="hover:bg-zinc-700/30 transition-colors">
+                        <td class="py-3 px-3 font-mono text-center text-zinc-500">7</td>
+                        <td class="py-3 px-2 font-medium truncate max-w-[140px]">Gunners</td>
+                        <td class="py-3 px-2 text-center text-zinc-400">9</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">4</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">1</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">4</td>
+                        <td class="py-3 px-3 font-black text-center bg-purple-600/10 text-purple-300">13</td>
+                    </tr>
+
+                    <tr class="hover:bg-zinc-700/30 transition-colors">
+                        <td class="py-3 px-3 font-mono text-center text-zinc-500">8</td>
+                        <td class="py-3 px-2 font-medium truncate max-w-[140px]">Cuyeyos</td>
+                        <td class="py-3 px-2 text-center text-zinc-400">9</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">3</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">2</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">4</td>
+                        <td class="py-3 px-3 font-black text-center bg-purple-600/10 text-purple-300">11</td>
+                    </tr>
+
+                    <tr class="hover:bg-zinc-700/30 transition-colors">
+                        <td class="py-3 px-3 font-mono text-center text-zinc-500">9</td>
+                        <td class="py-3 px-2 font-medium truncate max-w-[140px]">Tjalitos</td>
+                        <td class="py-3 px-2 text-center text-zinc-400">9</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">3</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">0</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">6</td>
+                        <td class="py-3 px-3 font-black text-center bg-purple-600/10 text-purple-300">9</td>
+                    </tr>
+
+                    <tr class="hover:bg-zinc-700/30 transition-colors">
+                        <td class="py-3 px-3 font-mono text-center text-zinc-500">10</td>
+                        <td class="py-3 px-2 font-medium truncate max-w-[140px]">Sirenas Blancas</td>
+                        <td class="py-3 px-2 text-center text-zinc-400">9</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">2</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">2</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">5</td>
+                        <td class="py-3 px-3 font-black text-center bg-purple-600/10 text-purple-300">8</td>
+                    </tr>
+
+                    <tr class="hover:bg-zinc-700/30 transition-colors">
+                        <td class="py-3 px-3 font-mono text-center text-zinc-500">11</td>
+                        <td class="py-3 px-2 font-medium truncate max-w-[140px]">Troyanas</td>
+                        <td class="py-3 px-2 text-center text-zinc-400">9</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">2</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">1</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">6</td>
+                        <td class="py-3 px-3 font-black text-center bg-purple-600/10 text-purple-300">7</td>
+                    </tr>
+
+                    <tr class="hover:bg-zinc-700/30 transition-colors">
+                        <td class="py-3 px-3 font-mono text-center text-zinc-500">12</td>
+                        <td class="py-3 px-2 font-medium truncate max-w-[140px]">Jox´s</td>
+                        <td class="py-3 px-2 text-center text-zinc-400">9</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">2</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">1</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">6</td>
+                        <td class="py-3 px-3 font-black text-center bg-purple-600/10 text-purple-300">7</td>
+                    </tr>
+
+                    <tr class="hover:bg-zinc-700/30 transition-colors">
+                        <td class="py-3 px-3 font-mono text-center text-zinc-500">13</td>
+                        <td class="py-3 px-2 font-medium truncate max-w-[140px]">Los+Capitos</td>
+                        <td class="py-3 px-2 text-center text-zinc-400">9</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">2</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">1</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">6</td>
+                        <td class="py-3 px-3 font-black text-center bg-purple-600/10 text-purple-300">7</td>
+                    </tr>
+
+                    <tr class="hover:bg-zinc-700/30 transition-colors">
+                        <td class="py-3 px-3 font-mono text-center text-zinc-500">14</td>
+                        <td class="py-3 px-2 font-medium truncate max-w-[140px]">Guayabitos</td>
+                        <td class="py-3 px-2 text-center text-zinc-400">9</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">2</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">1</td>
+                        <td class="py-3 px-2 text-center text-zinc-400 hidden sm:table-cell">6</td>
+                        <td class="py-3 px-3 font-black text-center bg-purple-600/10 text-purple-300">7</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <div class="sm:hidden fixed bottom-0 left-0 z-50 w-full h-16 bg-black border-t border-gray-800 shadow-2xl">
+        <div class="grid h-full max-w-lg grid-cols-5 mx-auto font-medium">
+
+            <a href="index.html"
+                class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+                <i
+                    class="fa-solid fa-newspaper text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+                <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Noticias</span>
+            </a>
+
+            <a href="partidos.html"
+                class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+                <i
+                    class="fa-solid fa-calendar-days text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+                <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Partidos</span>
+            </a>
+
+            <a href="equipos.html"
+                class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+                <i
+                    class="fa-solid fa-shield-halved text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+                <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Equipos</span>
+            </a>
+
+            <a href="torneos.html"
+                class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+                <i class="fa-solid fa-trophy text-xl text-purple-600"></i>
+                <span class="text-[10px] text-purple-600 mt-1">Torneos</span>
+            </a>
+
+            <a href="login.html"
+                class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+                <i
+                    class="fa-solid fa-user text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+                <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Perfil</span>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
