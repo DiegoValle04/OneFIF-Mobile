@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil - One FIF</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+
+<body class="bg-[#252525] text-zinc-300 antialiased min-h-screen pb-20">
+
+    <nav class="bg-black border-b border-gray-800 px-4 py-3 shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3 shrink-0">
+                <div
+                    class="bg-purple-600 text-white w-10 h-10 rounded-lg flex items-center justify-center font-bold text-xl shadow-md overflow-hidden">
+                    <img src="img/logo-uaq.png" class="w-full h-full object-cover" alt="Logo UAQ">
+                </div>
+                <a href="index.html">
+                    <span class="text-white font-extrabold text-lg sm:text-xl tracking-wider uppercase">
+                        One<span class="text-purple-500">FIF</span>
+                    </span>
+                </a>
+            </div>
+            <div class="flex-1 max-w-md relative">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <i class="fa-solid fa-magnifying-glass text-gray-400 text-sm"></i>
+                </div>
+                <input type="text" placeholder="Buscar..."
+                    class="w-full bg-gray-800 text-white placeholder-gray-400 text-sm rounded-full pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:bg-gray-700 transition-all duration-300 border border-transparent focus:border-transparent">
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-3xl mx-auto px-4 py-6">
+
+        <div
+            class="bg-zinc-800 border border-zinc-700 rounded-xl p-6 shadow-lg flex flex-col items-center text-center mb-6 relative">
+            <div
+                class="w-20 h-20 bg-purple-600 text-white rounded-full flex items-center justify-center mb-3 text-3xl shadow-md font-black uppercase">
+                <i class="fa-solid fa-user-graduate"></i>
+            </div>
+
+            <h1 id="perfil-nombre" class="text-xl font-black text-white uppercase tracking-wide">Cargando...</h1>
+            <span id="perfil-expediente" class="text-xs font-mono text-purple-400 mt-1">Exp. ------</span>
+            <p id="perfil-detalles" class="text-xs text-zinc-400 mt-2">Cargando carrera y semestre...</p>
+
+            <button onclick="cerrarSesion()"
+                class="absolute top-4 right-4 text-zinc-500 hover:text-rose-500 transition-colors text-sm"
+                title="Cerrar Sesión">
+                <i class="fa-solid fa-power-off text-base"></i>
+            </button>
+        </div>
+
+        <div class="mb-6">
+            <h2
+                class="text-base font-bold text-white mb-4 flex items-center gap-2 uppercase tracking-wide border-l-4 border-purple-600 pl-2">
+                <i class="fa-solid fa-chart-simple text-purple-600"></i> Estadísticas Individuales
+            </h2>
+
+            <div class="grid grid-cols-3 gap-3">
+                <div
+                    class="bg-zinc-800 border border-zinc-700 rounded-xl p-4 flex flex-col items-center justify-center text-center shadow-md">
+                    <i class="fa-solid fa-soccer-ball text-purple-500 text-xl mb-1"></i>
+                    <span class="text-[10px] uppercase font-bold text-zinc-500 tracking-wider">Goles</span>
+                    <span id="perfil-goles" class="text-white font-black text-xl mt-1">--</span>
+                </div>
+                <div
+                    class="bg-zinc-800 border border-zinc-700 rounded-xl p-4 flex flex-col items-center justify-center text-center shadow-md">
+                    <i class="fa-solid fa-shoe-prints text-purple-500 text-xl mb-1 transform -rotate-90"></i>
+                    <span class="text-[10px] uppercase font-bold text-zinc-500 tracking-wider">Asistencias</span>
+                    <span id="perfil-asistencias" class="text-white font-black text-xl mt-1">--</span>
+                </div>
+                <div
+                    class="bg-zinc-800 border border-zinc-700 rounded-xl p-4 flex flex-col items-center justify-center text-center shadow-md">
+                    <i class="fa-solid fa-shirt text-purple-500 text-xl mb-1"></i>
+                    <span class="text-[10px] uppercase font-bold text-zinc-500 tracking-wider">Partidos (PJ)</span>
+                    <span id="perfil-pj" class="text-white font-black text-xl mt-1">--</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-zinc-800 border border-zinc-700 rounded-xl p-4 flex items-center justify-between shadow-md">
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 bg-purple-600/10 border border-purple-500/30 rounded-full flex items-center justify-center text-purple-400 text-lg">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div>
+                    <p class="text-xs text-zinc-500 font-bold uppercase tracking-wider">Equipo Actual</p>
+                    <p id="perfil-equipo" class="text-white font-bold text-sm uppercase mt-0.5">Cargando...</p>
+                </div>
+            </div>
+            <i class="fa-solid fa-chevron-right text-zinc-600 text-xs"></i>
+        </div>
+
+    </main>
+
+    <div class="sm:hidden fixed bottom-0 left-0 z-50 w-full h-16 bg-black border-t border-gray-800 shadow-2xl">
+        <div class="grid h-full max-w-lg grid-cols-5 mx-auto font-medium">
+            <a href="index.html"
+                class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+                <i
+                    class="fa-solid fa-newspaper text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+                <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Noticias</span>
+            </a>
+            <a href="partidos.html"
+                class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+                <i
+                    class="fa-solid fa-calendar-days text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+                <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Partidos</span>
+            </a>
+            <a href="equipos.html"
+                class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+                <i
+                    class="fa-solid fa-shield-halved text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+                <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Equipos</span>
+            </a>
+            <a href="torneos.html"
+                class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+                <i
+                    class="fa-solid fa-trophy text-xl text-gray-400 group-hover:text-purple-600 transition-colors duration-200"></i>
+                <span class="text-[10px] text-gray-400 group-hover:text-purple-600 mt-1">Torneos</span>
+            </a>
+            <a href="perfil.html"
+                class="inline-flex flex-col items-center justify-center px-3 hover:bg-gray-900 group transition-colors duration-200">
+                <i class="fa-solid fa-user text-xl text-purple-600"></i>
+                <span class="text-[10px] text-purple-600 mt-1">Perfil</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="funciones.js"></script>
+</body>
+
+</html>
